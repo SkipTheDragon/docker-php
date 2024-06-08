@@ -1,0 +1,15 @@
+{
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tudorache Leonard-Valentin",
+      "email": "tudorache.leonard@wyverr.com"
+    }
+  ],
+  "require": {
+    "php": "^8"
+  },
+  "require-dev": {
+    "rector/rector": "^1.1"
+  }
+}

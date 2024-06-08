@@ -1,0 +1,41 @@
+{
+  "name": "skipthedragon/docker-php-wrapper",
+  "description": "Community built Docker Wrapper for PHP. Support Docker Engine 1.45+",
+  "keywords": [
+    "docker",
+    "wrapper",
+    "bridge",
+    "container",
+    "php"
+  ],
+  "homepage": "https://github.com/SkipTheDragon/docker-php/app/wrapper",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tudorache Leonard-Valentin",
+      "email": "tudorache.leonard@wyverr.com"
+    }
+  ],
+  "autoload-dev": {
+    "psr-4": {
+      "SkipTheDragon\\DockerWrapper\\Tests\\": "tests/",
+      "SkipTheDragon\\DockerWrapper\\Tests\\Fixtures\\": "tests/fixtures/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "SkipTheDragon\\DockerWrapper\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "require": {
+    "php": "^8",
+    "symfony/http-client": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "mockery/mockery": "^1.6"
+  }
+}

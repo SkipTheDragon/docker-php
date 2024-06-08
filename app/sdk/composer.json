@@ -1,0 +1,40 @@
+{
+  "name": "skipthedragon/docker-php-sdk",
+  "description": "Community built Docker SDK for PHP. Support Docker Engine 1.45+",
+  "keywords": [
+    "docker",
+    "sdk",
+    "bridge",
+    "container",
+    "php"
+  ],
+  "homepage": "https://github.com/SkipTheDragon/docker-php/app/sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tudorache Leonard-Valentin",
+      "email": "tudorache.leonard@wyverr.com"
+    }
+  ],
+  "autoload-dev": {
+    "psr-4": {
+      "SkipTheDragon\\DockerSDK\\Tests\\": "tests/",
+      "SkipTheDragon\\DockerSDK\\Tests\\Fixtures\\": "tests/fixtures/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "SkipTheDragon\\DockerSDK\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "require": {
+    "php": "^8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "mockery/mockery": "^1.6"
+  }
+}
